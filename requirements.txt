@@ -1,0 +1,10 @@
+dotenv~=0.9.9
+python-dotenv~=1.1.0
+setuptools~=80.9.0
+pandas~=2.3.0
+PyPDF2~=3.0.1
+requests~=2.32.4
+beautifulsoup4~=4.13.4
+whisper~=1.1.10
+pydub~=0.25.1
+mutagen~=1.47.0
