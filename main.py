@@ -32,6 +32,7 @@ def main():
     ], help="Type of content to analyze")
     parser.add_argument("--input", help="Path to file or URL (depending on mode)")
     parser.add_argument("--prompt", help="Custom prompt/question for LLM")
+    parser.add_argument("--output", help="Path to save the output")
     args = parser.parse_args()
 
     # Dispatch to the correct analyzer
@@ -60,6 +61,11 @@ def main():
 
     print("🧠 Analysis Result:")
     print(result)
+
+    if args.output:
+        with open(args.output, "w") as f:
+            f.write(str(result))
+        print(f"✅ Analysis saved to {args.output}")
 
 
 if __name__ == "__main__":

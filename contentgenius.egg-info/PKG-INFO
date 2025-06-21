@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: contentgenius
-Version: 1
+Version: 1.1
 Summary: This package contains implementation of an AI-powered content analysis tool.
 Home-page: https://github.com/SoftwareApkDev/contentgenius
 Author: SoftwareApkDev
@@ -71,17 +71,18 @@ pip install -r requirements.txt
 To use `contentgenius`, run the main script with the desired options:
 
 ```bash
-python3 main.py <mode> --input <input_file> --analysis <analysis_type>
+python3 main.py <mode> --input <input_file> --prompt <prompt> --output <output_file>
 ```
 
 *   `<mode>`: The mode of analysis (e.g., `analyze-pdf`, `analyze-text`, etc.).
 *   `--input`: Path to the input text file.
 *   `--prompt`: The prompt/question to be asked to the LLM.
+*   `--output`: Path to the output text file.
 
 Example:
 
 ```bash
-python3 main.py --input input.txt --prompt "What is the main idea ot the text?"
+python3 main.py --input input.txt --prompt "What is the main idea ot the text?" --output output.txt
 ```
 
 ## Configuration
